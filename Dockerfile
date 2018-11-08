@@ -8,7 +8,7 @@ RUN apk add --no-cache dumb-init python \
     && mkdir -p /home/dropbox/.dropbox /home/dropbox/Dropbox \
     && chmod +x /usr/local/bin/dropbox-cli \
     && chown dropbox:dropbox /usr/local/bin/dropbox-cli \
-    && chown dropbox:dropbox -R /home/dropbox/ \
+    && chown dropbox:dropbox -R /home/dropbox/ 
 
 USER dropbox
 
